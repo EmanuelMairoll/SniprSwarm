@@ -7,63 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88E62B24263571FE00444CD1 /* SniprSwarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B23263571FE00444CD1 /* SniprSwarmApp.swift */; };
-		88E62B26263571FE00444CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B25263571FE00444CD1 /* ContentView.swift */; };
-		88E62B28263571FF00444CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E62B27263571FF00444CD1 /* Assets.xcassets */; };
-		88E62B2B263571FF00444CD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E62B2A263571FF00444CD1 /* Preview Assets.xcassets */; };
-		88E62B37263571FF00444CD1 /* SniprSwarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B36263571FF00444CD1 /* SniprSwarmTests.swift */; };
-		88E62B42263571FF00444CD1 /* SniprSwarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B41263571FF00444CD1 /* SniprSwarmUITests.swift */; };
+		88AFF5FE263D6D03006EAF46 /* SniprSwarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF5FD263D6D03006EAF46 /* SniprSwarmApp.swift */; };
+		88AFF600263D6D03006EAF46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF5FF263D6D03006EAF46 /* ContentView.swift */; };
+		88AFF602263D6D04006EAF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFF601263D6D04006EAF46 /* Assets.xcassets */; };
+		88AFF605263D6D04006EAF46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFF604263D6D04006EAF46 /* Preview Assets.xcassets */; };
+		88AFF611263D6D04006EAF46 /* SniprSwarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF610263D6D04006EAF46 /* SniprSwarmTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		88E62B33263571FF00444CD1 /* PBXContainerItemProxy */ = {
+		88AFF60D263D6D04006EAF46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 88E62B18263571FE00444CD1 /* Project object */;
+			containerPortal = 88AFF5F2263D6D03006EAF46 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88E62B1F263571FE00444CD1;
-			remoteInfo = SniprSwarm;
-		};
-		88E62B3E263571FF00444CD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88E62B18263571FE00444CD1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88E62B1F263571FE00444CD1;
+			remoteGlobalIDString = 88AFF5F9263D6D03006EAF46;
 			remoteInfo = SniprSwarm;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		88E62B20263571FE00444CD1 /* SniprSwarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SniprSwarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88E62B23263571FE00444CD1 /* SniprSwarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmApp.swift; sourceTree = "<group>"; };
-		88E62B25263571FE00444CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		88E62B27263571FF00444CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		88E62B2A263571FF00444CD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		88E62B2C263571FF00444CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88E62B2D263571FF00444CD1 /* SniprSwarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SniprSwarm.entitlements; sourceTree = "<group>"; };
-		88E62B32263571FF00444CD1 /* SniprSwarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniprSwarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88E62B36263571FF00444CD1 /* SniprSwarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmTests.swift; sourceTree = "<group>"; };
-		88E62B38263571FF00444CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88E62B3D263571FF00444CD1 /* SniprSwarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniprSwarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88E62B41263571FF00444CD1 /* SniprSwarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmUITests.swift; sourceTree = "<group>"; };
-		88E62B43263571FF00444CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AFF5FA263D6D03006EAF46 /* SniprSwarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SniprSwarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AFF5FD263D6D03006EAF46 /* SniprSwarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmApp.swift; sourceTree = "<group>"; };
+		88AFF5FF263D6D03006EAF46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88AFF601263D6D04006EAF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88AFF604263D6D04006EAF46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88AFF606263D6D04006EAF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AFF607263D6D04006EAF46 /* SniprSwarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SniprSwarm.entitlements; sourceTree = "<group>"; };
+		88AFF60C263D6D04006EAF46 /* SniprSwarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniprSwarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AFF610263D6D04006EAF46 /* SniprSwarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmTests.swift; sourceTree = "<group>"; };
+		88AFF612263D6D04006EAF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AFF629263D6D2D006EAF46 /* SniprSwarmCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SniprSwarmCore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88E62B1D263571FE00444CD1 /* Frameworks */ = {
+		88AFF5F7263D6D03006EAF46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88E62B2F263571FF00444CD1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88E62B3A263571FF00444CD1 /* Frameworks */ = {
+		88AFF609263D6D04006EAF46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,75 +56,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88E62B17263571FE00444CD1 = {
+		88AFF5F1263D6D03006EAF46 = {
 			isa = PBXGroup;
 			children = (
-				88E62B22263571FE00444CD1 /* SniprSwarm */,
-				88E62B35263571FF00444CD1 /* SniprSwarmTests */,
-				88E62B40263571FF00444CD1 /* SniprSwarmUITests */,
-				88E62B21263571FE00444CD1 /* Products */,
+				88AFF5FC263D6D03006EAF46 /* SniprSwarm */,
+				88AFF629263D6D2D006EAF46 /* SniprSwarmCore */,
+				88AFF60F263D6D04006EAF46 /* SniprSwarmTests */,
+				88AFF5FB263D6D03006EAF46 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88E62B21263571FE00444CD1 /* Products */ = {
+		88AFF5FB263D6D03006EAF46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88E62B20263571FE00444CD1 /* SniprSwarm.app */,
-				88E62B32263571FF00444CD1 /* SniprSwarmTests.xctest */,
-				88E62B3D263571FF00444CD1 /* SniprSwarmUITests.xctest */,
+				88AFF5FA263D6D03006EAF46 /* SniprSwarm.app */,
+				88AFF60C263D6D04006EAF46 /* SniprSwarmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88E62B22263571FE00444CD1 /* SniprSwarm */ = {
+		88AFF5FC263D6D03006EAF46 /* SniprSwarm */ = {
 			isa = PBXGroup;
 			children = (
-				88E62B23263571FE00444CD1 /* SniprSwarmApp.swift */,
-				88E62B25263571FE00444CD1 /* ContentView.swift */,
-				88E62B27263571FF00444CD1 /* Assets.xcassets */,
-				88E62B2C263571FF00444CD1 /* Info.plist */,
-				88E62B2D263571FF00444CD1 /* SniprSwarm.entitlements */,
-				88E62B29263571FF00444CD1 /* Preview Content */,
+				88AFF5FD263D6D03006EAF46 /* SniprSwarmApp.swift */,
+				88AFF5FF263D6D03006EAF46 /* ContentView.swift */,
+				88AFF601263D6D04006EAF46 /* Assets.xcassets */,
+				88AFF606263D6D04006EAF46 /* Info.plist */,
+				88AFF607263D6D04006EAF46 /* SniprSwarm.entitlements */,
+				88AFF603263D6D04006EAF46 /* Preview Content */,
 			);
 			path = SniprSwarm;
 			sourceTree = "<group>";
 		};
-		88E62B29263571FF00444CD1 /* Preview Content */ = {
+		88AFF603263D6D04006EAF46 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				88E62B2A263571FF00444CD1 /* Preview Assets.xcassets */,
+				88AFF604263D6D04006EAF46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		88E62B35263571FF00444CD1 /* SniprSwarmTests */ = {
+		88AFF60F263D6D04006EAF46 /* SniprSwarmTests */ = {
 			isa = PBXGroup;
 			children = (
-				88E62B36263571FF00444CD1 /* SniprSwarmTests.swift */,
-				88E62B38263571FF00444CD1 /* Info.plist */,
+				88AFF610263D6D04006EAF46 /* SniprSwarmTests.swift */,
+				88AFF612263D6D04006EAF46 /* Info.plist */,
 			);
 			path = SniprSwarmTests;
-			sourceTree = "<group>";
-		};
-		88E62B40263571FF00444CD1 /* SniprSwarmUITests */ = {
-			isa = PBXGroup;
-			children = (
-				88E62B41263571FF00444CD1 /* SniprSwarmUITests.swift */,
-				88E62B43263571FF00444CD1 /* Info.plist */,
-			);
-			path = SniprSwarmUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88E62B1F263571FE00444CD1 /* SniprSwarm */ = {
+		88AFF5F9263D6D03006EAF46 /* SniprSwarm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88E62B46263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarm" */;
+			buildConfigurationList = 88AFF620263D6D04006EAF46 /* Build configuration list for PBXNativeTarget "SniprSwarm" */;
 			buildPhases = (
-				88E62B1C263571FE00444CD1 /* Sources */,
-				88E62B1D263571FE00444CD1 /* Frameworks */,
-				88E62B1E263571FE00444CD1 /* Resources */,
+				88AFF5F6263D6D03006EAF46 /* Sources */,
+				88AFF5F7263D6D03006EAF46 /* Frameworks */,
+				88AFF5F8263D6D03006EAF46 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -149,68 +122,46 @@
 			);
 			name = SniprSwarm;
 			productName = SniprSwarm;
-			productReference = 88E62B20263571FE00444CD1 /* SniprSwarm.app */;
+			productReference = 88AFF5FA263D6D03006EAF46 /* SniprSwarm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		88E62B31263571FF00444CD1 /* SniprSwarmTests */ = {
+		88AFF60B263D6D04006EAF46 /* SniprSwarmTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88E62B49263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmTests" */;
+			buildConfigurationList = 88AFF623263D6D04006EAF46 /* Build configuration list for PBXNativeTarget "SniprSwarmTests" */;
 			buildPhases = (
-				88E62B2E263571FF00444CD1 /* Sources */,
-				88E62B2F263571FF00444CD1 /* Frameworks */,
-				88E62B30263571FF00444CD1 /* Resources */,
+				88AFF608263D6D04006EAF46 /* Sources */,
+				88AFF609263D6D04006EAF46 /* Frameworks */,
+				88AFF60A263D6D04006EAF46 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				88E62B34263571FF00444CD1 /* PBXTargetDependency */,
+				88AFF60E263D6D04006EAF46 /* PBXTargetDependency */,
 			);
 			name = SniprSwarmTests;
 			productName = SniprSwarmTests;
-			productReference = 88E62B32263571FF00444CD1 /* SniprSwarmTests.xctest */;
+			productReference = 88AFF60C263D6D04006EAF46 /* SniprSwarmTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		88E62B3C263571FF00444CD1 /* SniprSwarmUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88E62B4C263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmUITests" */;
-			buildPhases = (
-				88E62B39263571FF00444CD1 /* Sources */,
-				88E62B3A263571FF00444CD1 /* Frameworks */,
-				88E62B3B263571FF00444CD1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				88E62B3F263571FF00444CD1 /* PBXTargetDependency */,
-			);
-			name = SniprSwarmUITests;
-			productName = SniprSwarmUITests;
-			productReference = 88E62B3D263571FF00444CD1 /* SniprSwarmUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88E62B18263571FE00444CD1 /* Project object */ = {
+		88AFF5F2263D6D03006EAF46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					88E62B1F263571FE00444CD1 = {
-						CreatedOnToolsVersion = 12.4;
+					88AFF5F9263D6D03006EAF46 = {
+						CreatedOnToolsVersion = 12.5;
 					};
-					88E62B31263571FF00444CD1 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 88E62B1F263571FE00444CD1;
-					};
-					88E62B3C263571FF00444CD1 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 88E62B1F263571FE00444CD1;
+					88AFF60B263D6D04006EAF46 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 88AFF5F9263D6D03006EAF46;
 					};
 				};
 			};
-			buildConfigurationList = 88E62B1B263571FE00444CD1 /* Build configuration list for PBXProject "SniprSwarm" */;
+			buildConfigurationList = 88AFF5F5263D6D03006EAF46 /* Build configuration list for PBXProject "SniprSwarm" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,36 +169,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 88E62B17263571FE00444CD1;
-			productRefGroup = 88E62B21263571FE00444CD1 /* Products */;
+			mainGroup = 88AFF5F1263D6D03006EAF46;
+			productRefGroup = 88AFF5FB263D6D03006EAF46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88E62B1F263571FE00444CD1 /* SniprSwarm */,
-				88E62B31263571FF00444CD1 /* SniprSwarmTests */,
-				88E62B3C263571FF00444CD1 /* SniprSwarmUITests */,
+				88AFF5F9263D6D03006EAF46 /* SniprSwarm */,
+				88AFF60B263D6D04006EAF46 /* SniprSwarmTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		88E62B1E263571FE00444CD1 /* Resources */ = {
+		88AFF5F8263D6D03006EAF46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E62B2B263571FF00444CD1 /* Preview Assets.xcassets in Resources */,
-				88E62B28263571FF00444CD1 /* Assets.xcassets in Resources */,
+				88AFF605263D6D04006EAF46 /* Preview Assets.xcassets in Resources */,
+				88AFF602263D6D04006EAF46 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88E62B30263571FF00444CD1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88E62B3B263571FF00444CD1 /* Resources */ = {
+		88AFF60A263D6D04006EAF46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,48 +200,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88E62B1C263571FE00444CD1 /* Sources */ = {
+		88AFF5F6263D6D03006EAF46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E62B26263571FE00444CD1 /* ContentView.swift in Sources */,
-				88E62B24263571FE00444CD1 /* SniprSwarmApp.swift in Sources */,
+				88AFF600263D6D03006EAF46 /* ContentView.swift in Sources */,
+				88AFF5FE263D6D03006EAF46 /* SniprSwarmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88E62B2E263571FF00444CD1 /* Sources */ = {
+		88AFF608263D6D04006EAF46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E62B37263571FF00444CD1 /* SniprSwarmTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88E62B39263571FF00444CD1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88E62B42263571FF00444CD1 /* SniprSwarmUITests.swift in Sources */,
+				88AFF611263D6D04006EAF46 /* SniprSwarmTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		88E62B34263571FF00444CD1 /* PBXTargetDependency */ = {
+		88AFF60E263D6D04006EAF46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 88E62B1F263571FE00444CD1 /* SniprSwarm */;
-			targetProxy = 88E62B33263571FF00444CD1 /* PBXContainerItemProxy */;
-		};
-		88E62B3F263571FF00444CD1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 88E62B1F263571FE00444CD1 /* SniprSwarm */;
-			targetProxy = 88E62B3E263571FF00444CD1 /* PBXContainerItemProxy */;
+			target = 88AFF5F9263D6D03006EAF46 /* SniprSwarm */;
+			targetProxy = 88AFF60D263D6D04006EAF46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		88E62B44263571FF00444CD1 /* Debug */ = {
+		88AFF61E263D6D04006EAF46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -359,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		88E62B45263571FF00444CD1 /* Release */ = {
+		88AFF61F263D6D04006EAF46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -404,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -413,7 +343,7 @@
 			};
 			name = Release;
 		};
-		88E62B47263571FF00444CD1 /* Debug */ = {
+		88AFF621263D6D04006EAF46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -437,7 +367,7 @@
 			};
 			name = Debug;
 		};
-		88E62B48263571FF00444CD1 /* Release */ = {
+		88AFF622263D6D04006EAF46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -461,7 +391,7 @@
 			};
 			name = Release;
 		};
-		88E62B4A263571FF00444CD1 /* Debug */ = {
+		88AFF624263D6D04006EAF46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -483,7 +413,7 @@
 			};
 			name = Debug;
 		};
-		88E62B4B263571FF00444CD1 /* Release */ = {
+		88AFF625263D6D04006EAF46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -502,89 +432,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SniprSwarm.app/Contents/MacOS/SniprSwarm";
-			};
-			name = Release;
-		};
-		88E62B4D263571FF00444CD1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 52M2HV7QQ7;
-				INFOPLIST_FILE = SniprSwarmUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarmUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = SniprSwarm;
-			};
-			name = Debug;
-		};
-		88E62B4E263571FF00444CD1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 52M2HV7QQ7;
-				INFOPLIST_FILE = SniprSwarmUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarmUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = SniprSwarm;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88E62B1B263571FE00444CD1 /* Build configuration list for PBXProject "SniprSwarm" */ = {
+		88AFF5F5263D6D03006EAF46 /* Build configuration list for PBXProject "SniprSwarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88E62B44263571FF00444CD1 /* Debug */,
-				88E62B45263571FF00444CD1 /* Release */,
+				88AFF61E263D6D04006EAF46 /* Debug */,
+				88AFF61F263D6D04006EAF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88E62B46263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarm" */ = {
+		88AFF620263D6D04006EAF46 /* Build configuration list for PBXNativeTarget "SniprSwarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88E62B47263571FF00444CD1 /* Debug */,
-				88E62B48263571FF00444CD1 /* Release */,
+				88AFF621263D6D04006EAF46 /* Debug */,
+				88AFF622263D6D04006EAF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88E62B49263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmTests" */ = {
+		88AFF623263D6D04006EAF46 /* Build configuration list for PBXNativeTarget "SniprSwarmTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88E62B4A263571FF00444CD1 /* Debug */,
-				88E62B4B263571FF00444CD1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88E62B4C263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88E62B4D263571FF00444CD1 /* Debug */,
-				88E62B4E263571FF00444CD1 /* Release */,
+				88AFF624263D6D04006EAF46 /* Debug */,
+				88AFF625263D6D04006EAF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 88E62B18263571FE00444CD1 /* Project object */;
+	rootObject = 88AFF5F2263D6D03006EAF46 /* Project object */;
 }

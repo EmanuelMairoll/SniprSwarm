@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SniprSwarm
 //
-//  Created by Emanuel Mairoll on 25.04.21.
+//  Created by Emanuel Mairoll on 01.05.21.
 //
 
 import SwiftUI
