@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88E62B24263571FE00444CD1 /* SniprSwarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B23263571FE00444CD1 /* SniprSwarmApp.swift */; };
+		88E62B26263571FE00444CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B25263571FE00444CD1 /* ContentView.swift */; };
+		88E62B28263571FF00444CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E62B27263571FF00444CD1 /* Assets.xcassets */; };
+		88E62B2B263571FF00444CD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E62B2A263571FF00444CD1 /* Preview Assets.xcassets */; };
+		88E62B37263571FF00444CD1 /* SniprSwarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B36263571FF00444CD1 /* SniprSwarmTests.swift */; };
+		88E62B42263571FF00444CD1 /* SniprSwarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E62B41263571FF00444CD1 /* SniprSwarmUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88E62B33263571FF00444CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88E62B18263571FE00444CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E62B1F263571FE00444CD1;
+			remoteInfo = SniprSwarm;
+		};
+		88E62B3E263571FF00444CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88E62B18263571FE00444CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E62B1F263571FE00444CD1;
+			remoteInfo = SniprSwarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88E62B20263571FE00444CD1 /* SniprSwarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SniprSwarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E62B23263571FE00444CD1 /* SniprSwarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmApp.swift; sourceTree = "<group>"; };
+		88E62B25263571FE00444CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88E62B27263571FF00444CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88E62B2A263571FF00444CD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88E62B2C263571FF00444CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E62B2D263571FF00444CD1 /* SniprSwarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SniprSwarm.entitlements; sourceTree = "<group>"; };
+		88E62B32263571FF00444CD1 /* SniprSwarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniprSwarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E62B36263571FF00444CD1 /* SniprSwarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmTests.swift; sourceTree = "<group>"; };
+		88E62B38263571FF00444CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E62B3D263571FF00444CD1 /* SniprSwarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniprSwarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E62B41263571FF00444CD1 /* SniprSwarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmUITests.swift; sourceTree = "<group>"; };
+		88E62B43263571FF00444CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88E62B1D263571FE00444CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E62B2F263571FF00444CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E62B3A263571FF00444CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88E62B17263571FE00444CD1 = {
+			isa = PBXGroup;
+			children = (
+				88E62B22263571FE00444CD1 /* SniprSwarm */,
+				88E62B35263571FF00444CD1 /* SniprSwarmTests */,
+				88E62B40263571FF00444CD1 /* SniprSwarmUITests */,
+				88E62B21263571FE00444CD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88E62B21263571FE00444CD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88E62B20263571FE00444CD1 /* SniprSwarm.app */,
+				88E62B32263571FF00444CD1 /* SniprSwarmTests.xctest */,
+				88E62B3D263571FF00444CD1 /* SniprSwarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88E62B22263571FE00444CD1 /* SniprSwarm */ = {
+			isa = PBXGroup;
+			children = (
+				88E62B23263571FE00444CD1 /* SniprSwarmApp.swift */,
+				88E62B25263571FE00444CD1 /* ContentView.swift */,
+				88E62B27263571FF00444CD1 /* Assets.xcassets */,
+				88E62B2C263571FF00444CD1 /* Info.plist */,
+				88E62B2D263571FF00444CD1 /* SniprSwarm.entitlements */,
+				88E62B29263571FF00444CD1 /* Preview Content */,
+			);
+			path = SniprSwarm;
+			sourceTree = "<group>";
+		};
+		88E62B29263571FF00444CD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88E62B2A263571FF00444CD1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88E62B35263571FF00444CD1 /* SniprSwarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				88E62B36263571FF00444CD1 /* SniprSwarmTests.swift */,
+				88E62B38263571FF00444CD1 /* Info.plist */,
+			);
+			path = SniprSwarmTests;
+			sourceTree = "<group>";
+		};
+		88E62B40263571FF00444CD1 /* SniprSwarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88E62B41263571FF00444CD1 /* SniprSwarmUITests.swift */,
+				88E62B43263571FF00444CD1 /* Info.plist */,
+			);
+			path = SniprSwarmUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88E62B1F263571FE00444CD1 /* SniprSwarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E62B46263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarm" */;
+			buildPhases = (
+				88E62B1C263571FE00444CD1 /* Sources */,
+				88E62B1D263571FE00444CD1 /* Frameworks */,
+				88E62B1E263571FE00444CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SniprSwarm;
+			productName = SniprSwarm;
+			productReference = 88E62B20263571FE00444CD1 /* SniprSwarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88E62B31263571FF00444CD1 /* SniprSwarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E62B49263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmTests" */;
+			buildPhases = (
+				88E62B2E263571FF00444CD1 /* Sources */,
+				88E62B2F263571FF00444CD1 /* Frameworks */,
+				88E62B30263571FF00444CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88E62B34263571FF00444CD1 /* PBXTargetDependency */,
+			);
+			name = SniprSwarmTests;
+			productName = SniprSwarmTests;
+			productReference = 88E62B32263571FF00444CD1 /* SniprSwarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88E62B3C263571FF00444CD1 /* SniprSwarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E62B4C263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmUITests" */;
+			buildPhases = (
+				88E62B39263571FF00444CD1 /* Sources */,
+				88E62B3A263571FF00444CD1 /* Frameworks */,
+				88E62B3B263571FF00444CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88E62B3F263571FF00444CD1 /* PBXTargetDependency */,
+			);
+			name = SniprSwarmUITests;
+			productName = SniprSwarmUITests;
+			productReference = 88E62B3D263571FF00444CD1 /* SniprSwarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88E62B18263571FE00444CD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					88E62B1F263571FE00444CD1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					88E62B31263571FF00444CD1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 88E62B1F263571FE00444CD1;
+					};
+					88E62B3C263571FF00444CD1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 88E62B1F263571FE00444CD1;
+					};
+				};
+			};
+			buildConfigurationList = 88E62B1B263571FE00444CD1 /* Build configuration list for PBXProject "SniprSwarm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88E62B17263571FE00444CD1;
+			productRefGroup = 88E62B21263571FE00444CD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E62B1F263571FE00444CD1 /* SniprSwarm */,
+				88E62B31263571FF00444CD1 /* SniprSwarmTests */,
+				88E62B3C263571FF00444CD1 /* SniprSwarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88E62B1E263571FE00444CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E62B2B263571FF00444CD1 /* Preview Assets.xcassets in Resources */,
+				88E62B28263571FF00444CD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E62B30263571FF00444CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E62B3B263571FF00444CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88E62B1C263571FE00444CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E62B26263571FE00444CD1 /* ContentView.swift in Sources */,
+				88E62B24263571FE00444CD1 /* SniprSwarmApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E62B2E263571FF00444CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E62B37263571FF00444CD1 /* SniprSwarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E62B39263571FF00444CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E62B42263571FF00444CD1 /* SniprSwarmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88E62B34263571FF00444CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E62B1F263571FE00444CD1 /* SniprSwarm */;
+			targetProxy = 88E62B33263571FF00444CD1 /* PBXContainerItemProxy */;
+		};
+		88E62B3F263571FF00444CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E62B1F263571FE00444CD1 /* SniprSwarm */;
+			targetProxy = 88E62B3E263571FF00444CD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		88E62B44263571FF00444CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88E62B45263571FF00444CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		88E62B47263571FF00444CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SniprSwarm/SniprSwarm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SniprSwarm/Preview Content\"";
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SniprSwarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88E62B48263571FF00444CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SniprSwarm/SniprSwarm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SniprSwarm/Preview Content\"";
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SniprSwarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		88E62B4A263571FF00444CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				INFOPLIST_FILE = SniprSwarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SniprSwarm.app/Contents/MacOS/SniprSwarm";
+			};
+			name = Debug;
+		};
+		88E62B4B263571FF00444CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				INFOPLIST_FILE = SniprSwarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SniprSwarm.app/Contents/MacOS/SniprSwarm";
+			};
+			name = Release;
+		};
+		88E62B4D263571FF00444CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				INFOPLIST_FILE = SniprSwarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SniprSwarm;
+			};
+			name = Debug;
+		};
+		88E62B4E263571FF00444CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				INFOPLIST_FILE = SniprSwarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.iManuel.SniprSwarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SniprSwarm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88E62B1B263571FE00444CD1 /* Build configuration list for PBXProject "SniprSwarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E62B44263571FF00444CD1 /* Debug */,
+				88E62B45263571FF00444CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88E62B46263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E62B47263571FF00444CD1 /* Debug */,
+				88E62B48263571FF00444CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88E62B49263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E62B4A263571FF00444CD1 /* Debug */,
+				88E62B4B263571FF00444CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88E62B4C263571FF00444CD1 /* Build configuration list for PBXNativeTarget "SniprSwarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E62B4D263571FF00444CD1 /* Debug */,
+				88E62B4E263571FF00444CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88E62B18263571FE00444CD1 /* Project object */;
+}
