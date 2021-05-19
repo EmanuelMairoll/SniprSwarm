@@ -6,69 +6,127 @@
 //
 
 import Foundation
-import SotoCore
 import SotoEventBridge
+import SotoLambda
+import SotoCloudWatch
+import SotoCloudWatchLogs
 import NIO
 
-public typealias Futr = EventLoopFuture
-
-let ev = MultiThreadedEventLoopGroup(numberOfThreads: System.coreCount)
 
 let awsClient = AWSClient(
     credentialProvider: .static(accessKeyId: AWS_ACCESS_KEY_ID, secretAccessKey: AWS_SECRET_ACCESS_KEY),
     httpClientProvider: .createNew
 )
 
-public class SniprService {    
-    typealias EB = EventBridge
-    let eb = EventBridge(client: awsClient)
+public protocol AWSServiceRO {
+    associatedtype ResourceType
+
+    func list() -> Futr<[ResourceType]>
+}
+
+public protocol AWSService: AWSServiceRO {
+
+    @discardableResult
+    func add(resource: ResourceType) -> Futr<Void>
+
+    @discardableResult
+    func delete(resource: ResourceType) -> Futr<Void>
+}
+
+
+public class SniprService: AWSService {
+    let eb = EventBridge(client: awsClient, region: .eucentral1)
     
     public func list() -> Futr<[Snipr]> {
-        let f1 = eb.listRules(EB.ListRulesRequest(), on: ev.next())
-        
-        let f2 = f1.flatMap { response -> Futr<[(EB.Rule, [EB.Target])]> in
-            var targetFutures: [Futr<(EB.Rule, [EB.Target])>] = []
-            var tagFutures: [Futr<(EB.Rule, [EB.Tag])>] = []
+        return eb.listRules(EB.ListRulesRequest(namePrefix: "SniprSwarm-"))
+            .flatMap { response -> Futr<[(EB.Rule, [EB.Target], [EB.Tag])]> in
 
-            for rule in response.rules! {
-                let targetFutures = self.eb.listTargetsByRule(EB.ListTargetsByRuleRequest(rule: rule.name!), on: ev.next())
-                    .map { response in
-                        return (rule, response.targets!)
+                let rules = response.rules ?? []
+
+                let allFutures = rules.map { rule -> Futr<(EB.Rule, [EB.Target], [EB.Tag])> in
+                    let targetsFuture = self.eb.listTargetsByRule(EB.ListTargetsByRuleRequest(rule: rule.name!))
+                    let tagsFuture = self.eb.listTagsForResource(EB.ListTagsForResourceRequest(resourceARN: rule.arn!))
+
+                    return targetsFuture.and(tagsFuture).map { (targetsResponse, tagsResponse) in
+                        return (rule, targetsResponse.targets ?? [], tagsResponse.tags ?? [])
                     }
-                targetFutures.append(targetFuture)
-                
-                let tagFuture = self.eb.listTargetsByRule(EB.ListTargetsByRuleRequest(rule: rule.name!), on: ev.next())
-                    .map { response in
-                        return (rule, response.targets!)
-                    }
-                targetFutures.append(targetFuture)
+                }
+
+                return .reduce(into: [], allFutures, on: awsClient.eventLoopGroup.next()) { res, elem in res.append(elem)}
             }
-            
-            
-            
-            return EventLoopFuture.reduce(into: [(EB.Rule, [EB.Target])](), futures, on: ev.next()) { (array, newVal) in
-                array.append(newVal)
+            .map { rules -> [Snipr] in
+                return rules.map { rule, targets, tags in Snipr(rule: rule , targets: targets, tags: tags) }
             }
-        }
-        
-        return f2.map { rules -> [Snipr] in
-            return rules.map { rule, targets in Snipr(rule: rule , targets: targets) }
-        }
     }
-    
-    func add(resource: Snipr) {
-        return
+
+    @discardableResult
+    public func add(resource: Snipr) -> Futr<Void> {
+        let (rule, targets, tags) = resource.toAwsElements()
+
+        return eb.putRule(EB.PutRuleRequest(description: rule.description, name: rule.name!, scheduleExpression: rule.scheduleExpression, tags: tags))
+            .flatMap { _ in
+                self.eb.putTargets(EB.PutTargetsRequest(rule: rule.name!, targets: targets))
+            }
+            .map { _ -> Void in
+                return
+            }
     }
-    
-    func delete(resource: Snipr) {
-        return
+
+
+    @discardableResult
+    public func delete(resource: Snipr) -> Futr<Void>{
+        let name = resource.awsName
+
+        return eb.listTargetsByRule(EB.ListTargetsByRuleRequest(rule: name))
+            .flatMap { response in
+                self.eb.removeTargets(EB.RemoveTargetsRequest(ids: response.targets!.map { $0.id }, rule: name))
+            }
+            .flatMap { _ in
+                self.eb.deleteRule(EventBridge.DeleteRuleRequest(name: name))
+            }
+            .map { _ -> Void in
+                return
+            }
     }
 }
 
+public class TacticService: AWSServiceRO /*RO probably todo?*/ {
+    let lb = Lambda(client: awsClient, region: .eucentral1)
+
+    public func list() -> EventLoopFuture<[SniprTactic]> {
+        //TODO at max 50 functions supported
+
+        return lb.listFunctions(LB.ListFunctionsRequest())
+            .map { response in
+                response.functions?.map { function in
+                    SniprTactic(name: function.functionName!, arn: function.functionArn!, desc: function.description)
+                } ?? []
+            }
+    }
+}
+
+
+public class LogService {
+    let cw = CloudWatch(client: awsClient, region: .eucentral1)
+    let cwl = CloudWatchLogs(client: awsClient, region: .eucentral1)
+
+    /*
+    func test() {
+        let t = try! cwl.describeLogStreams(CloudWatchLogs.DescribeLogStreamsRequest(logGroupName: "/aws/lambda/SniprSwarm")).wait()
+        print(t.logStreams)
+        let l = t.logStreams?[0]
+
+        cwl.log
+
+        cwl.descri
+
+    }
+ */
+
+}
+
 /*
- 
- //TODO: Tactic Service
- 
+
  //TODO: Log Service
  
  */

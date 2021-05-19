@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 public extension Array where Element == Identity {
     func save() {
         let encoder = JSONEncoder()

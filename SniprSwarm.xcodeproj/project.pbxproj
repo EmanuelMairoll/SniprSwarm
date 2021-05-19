@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,9 @@
 		88AFF602263D6D04006EAF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFF601263D6D04006EAF46 /* Assets.xcassets */; };
 		88AFF605263D6D04006EAF46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFF604263D6D04006EAF46 /* Preview Assets.xcassets */; };
 		88AFF611263D6D04006EAF46 /* SniprSwarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF610263D6D04006EAF46 /* SniprSwarmTests.swift */; };
-		88EBD7AE263D72F500FE5899 /* SotoLambda in Frameworks */ = {isa = PBXBuildFile; productRef = 88EBD7AD263D72F500FE5899 /* SotoLambda */; };
-		88EBD7B0263D72F500FE5899 /* SotoCloudWatch in Frameworks */ = {isa = PBXBuildFile; productRef = 88EBD7AF263D72F500FE5899 /* SotoCloudWatch */; };
-		88EBD7B2263D72F500FE5899 /* SotoEventBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 88EBD7B1263D72F500FE5899 /* SotoEventBridge */; };
+		88E6557F264EF15A000EDEAD /* SniprList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6557E264EF15A000EDEAD /* SniprList.swift */; };
+		88E65581264EF2B5000EDEAD /* SniprRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E65580264EF2B5000EDEAD /* SniprRow.swift */; };
+		88E65584264EF417000EDEAD /* ImageRetreiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E65583264EF417000EDEAD /* ImageRetreiver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,9 @@
 		88AFF610263D6D04006EAF46 /* SniprSwarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmTests.swift; sourceTree = "<group>"; };
 		88AFF612263D6D04006EAF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88AFF629263D6D2D006EAF46 /* SniprSwarmCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SniprSwarmCore; sourceTree = "<group>"; };
+		88E6557E264EF15A000EDEAD /* SniprList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprList.swift; sourceTree = "<group>"; };
+		88E65580264EF2B5000EDEAD /* SniprRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprRow.swift; sourceTree = "<group>"; };
+		88E65583264EF417000EDEAD /* ImageRetreiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetreiver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88EBD7B2263D72F500FE5899 /* SotoEventBridge in Frameworks */,
-				88EBD7AE263D72F500FE5899 /* SotoLambda in Frameworks */,
-				88EBD7B0263D72F500FE5899 /* SotoCloudWatch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +69,7 @@
 				88AFF629263D6D2D006EAF46 /* SniprSwarmCore */,
 				88AFF60F263D6D04006EAF46 /* SniprSwarmTests */,
 				88AFF5FB263D6D03006EAF46 /* Products */,
+				88EBD7B3263D742800FE5899 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,8 @@
 			children = (
 				88AFF5FD263D6D03006EAF46 /* SniprSwarmApp.swift */,
 				88AFF5FF263D6D03006EAF46 /* ContentView.swift */,
+				88E6557D264EF10F000EDEAD /* Views */,
+				88E65582264EF3FF000EDEAD /* Util */,
 				88AFF601263D6D04006EAF46 /* Assets.xcassets */,
 				88AFF606263D6D04006EAF46 /* Info.plist */,
 				88AFF607263D6D04006EAF46 /* SniprSwarm.entitlements */,
@@ -111,6 +114,30 @@
 			path = SniprSwarmTests;
 			sourceTree = "<group>";
 		};
+		88E6557D264EF10F000EDEAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88E6557E264EF15A000EDEAD /* SniprList.swift */,
+				88E65580264EF2B5000EDEAD /* SniprRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88E65582264EF3FF000EDEAD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				88E65583264EF417000EDEAD /* ImageRetreiver.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		88EBD7B3263D742800FE5899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +155,6 @@
 			);
 			name = SniprSwarm;
 			packageProductDependencies = (
-				88EBD7AD263D72F500FE5899 /* SotoLambda */,
-				88EBD7AF263D72F500FE5899 /* SotoCloudWatch */,
-				88EBD7B1263D72F500FE5899 /* SotoEventBridge */,
 			);
 			productName = SniprSwarm;
 			productReference = 88AFF5FA263D6D03006EAF46 /* SniprSwarm.app */;
@@ -182,7 +206,6 @@
 			);
 			mainGroup = 88AFF5F1263D6D03006EAF46;
 			packageReferences = (
-				88EBD7AC263D72F500FE5899 /* XCRemoteSwiftPackageReference "soto" */,
 			);
 			productRefGroup = 88AFF5FB263D6D03006EAF46 /* Products */;
 			projectDirPath = "";
@@ -219,7 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88AFF600263D6D03006EAF46 /* ContentView.swift in Sources */,
+				88E65581264EF2B5000EDEAD /* SniprRow.swift in Sources */,
+				88E6557F264EF15A000EDEAD /* SniprList.swift in Sources */,
 				88AFF5FE263D6D03006EAF46 /* SniprSwarmApp.swift in Sources */,
+				88E65584264EF417000EDEAD /* ImageRetreiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,35 +506,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		88EBD7AC263D72F500FE5899 /* XCRemoteSwiftPackageReference "soto" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/soto-project/soto.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		88EBD7AD263D72F500FE5899 /* SotoLambda */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 88EBD7AC263D72F500FE5899 /* XCRemoteSwiftPackageReference "soto" */;
-			productName = SotoLambda;
-		};
-		88EBD7AF263D72F500FE5899 /* SotoCloudWatch */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 88EBD7AC263D72F500FE5899 /* XCRemoteSwiftPackageReference "soto" */;
-			productName = SotoCloudWatch;
-		};
-		88EBD7B1263D72F500FE5899 /* SotoEventBridge */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 88EBD7AC263D72F500FE5899 /* XCRemoteSwiftPackageReference "soto" */;
-			productName = SotoEventBridge;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88AFF5F2263D6D03006EAF46 /* Project object */;
 }
