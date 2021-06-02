@@ -28,8 +28,8 @@ let package = Package(
             dependencies: [
                 .product(name: "SotoEventBridge", package: "soto"),
                 .product(name: "SotoLambda", package: "soto"),
-                .product(name: "SotoCloudWatch", package: "soto"),
-                .product(name: "SotoCloudWatchLogs", package: "soto"),
+                //.product(name: "SotoCloudWatch", package: "soto"),
+                //.product(name: "SotoCloudWatchLogs", package: "soto"),
             ]),
         .testTarget(
             name: "SniprSwarmCoreTests",

@@ -25,8 +25,8 @@ public extension Snipr {
             respectiveOffetSeconds: Int(tags.value(forKey: .respectiveOffetSeconds)!)!,
             link: tags.value(forKey: .link)!,
             size: tags.value(forKey: .size)!,
-            thumbnailUrl: tags.value(forKey: .thumbnailUrl)
-            sniprTactic: SniprTactic(name: tags.value(forKey: .sniprTacticName)!, arn: tags.value(forKey: .sniprTacticARN)!),
+            thumbnailUrl: tags.value(forKey: .thumbnailUrl)!,
+            sniprTacticArn: tags.value(forKey: .sniprTacticARN)!,
             identities: targets.map { TargetInput.from(json: $0.input!)!.identity }
         )
     }
@@ -40,7 +40,7 @@ public extension Snipr {
         for identity in identities {
             targets.append(
                 EB.Target(
-                    arn: sniprTactic.arn,
+                    arn: sniprTacticArn,
                     id: "\(rule.name!)-\(loopCount + 1)",
                     input: TargetInput(
                         identity: identity,
@@ -55,13 +55,12 @@ public extension Snipr {
         }
 
         let tags = [
-            EB.Tag(key: RoleTag.baseOffetSeconds.rawValue, value: String(baseOffetSeconds)),
-            EB.Tag(key: RoleTag.respectiveOffetSeconds.rawValue, value: String(respectiveOffetSeconds)),
-            EB.Tag(key: RoleTag.link.rawValue, value: link),
-            EB.Tag(key: RoleTag.size.rawValue, value: size),
-            EB.Tag(key: RoleTag.thumbnailUrl.rawValue, value: thumbnailUrl),
-            EB.Tag(key: RoleTag.sniprTacticName.rawValue, value: sniprTactic.name),
-            EB.Tag(key: RoleTag.sniprTacticARN.rawValue, value: sniprTactic.arn),
+            EB.Tag(key: RuleToSniprTags.baseOffetSeconds.rawValue, value: String(baseOffetSeconds)),
+            EB.Tag(key: RuleToSniprTags.respectiveOffetSeconds.rawValue, value: String(respectiveOffetSeconds)),
+            EB.Tag(key: RuleToSniprTags.link.rawValue, value: link),
+            EB.Tag(key: RuleToSniprTags.size.rawValue, value: size),
+            EB.Tag(key: RuleToSniprTags.thumbnailUrl.rawValue, value: thumbnailUrl),
+            EB.Tag(key: RuleToSniprTags.sniprTacticARN.rawValue, value: sniprTacticArn),
         ]
 
         return (rule, targets, tags)
@@ -76,7 +75,7 @@ public extension Snipr {
 }
 
 public extension Array where Element == EB.Tag {
-    func value(forKey key: RoleTag) -> String?{
+    func value(forKey key: RuleToSniprTags) -> String?{
         return self.first { $0.key == key.rawValue }?.value
     }
 }
@@ -92,6 +91,18 @@ public extension TargetInput {
         let jsonData = try! JSONEncoder().encode(self)
         return String(data: jsonData, encoding: .utf8)!
     }
+}
+
+public extension SniprTactic {
+
+    init(function: LB.FunctionConfiguration, tags: [String: String]) {
+        name = function.functionName!
+        arn = function.functionArn!
+        desc = function.description
+        successSignal = tags[LambdaToTacticTags.successSignal.rawValue]!
+        failureSignal = tags[LambdaToTacticTags.failureSignal.rawValue]!
+    }
+
 }
 
 public extension Date {

@@ -1,6 +1,5 @@
     import XCTest
     @testable import SniprSwarmCore
-    import SotoCloudWatchLogs
 
     final class SniprSwarmCoreTests: XCTestCase {
         func testIdentityPersistance() throws {
