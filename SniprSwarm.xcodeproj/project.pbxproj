@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880E1B582658F668008AB120 /* SniprDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880E1B572658F668008AB120 /* SniprDetail.swift */; };
+		880E1B5B2658F835008AB120 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880E1B5A2658F835008AB120 /* ModelData.swift */; };
+		880E1B5D2658FCCC008AB120 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880E1B5C2658FCCC008AB120 /* Examples.swift */; };
 		88AFF5FE263D6D03006EAF46 /* SniprSwarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF5FD263D6D03006EAF46 /* SniprSwarmApp.swift */; };
 		88AFF600263D6D03006EAF46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF5FF263D6D03006EAF46 /* ContentView.swift */; };
 		88AFF602263D6D04006EAF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFF601263D6D04006EAF46 /* Assets.xcassets */; };
 		88AFF605263D6D04006EAF46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AFF604263D6D04006EAF46 /* Preview Assets.xcassets */; };
 		88AFF611263D6D04006EAF46 /* SniprSwarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF610263D6D04006EAF46 /* SniprSwarmTests.swift */; };
+		88DD949426555DB700D21B25 /* AsyncResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD949326555DB700D21B25 /* AsyncResource.swift */; };
+		88DD949626564CB800D21B25 /* SniprSwarmCore in Frameworks */ = {isa = PBXBuildFile; productRef = 88DD949526564CB800D21B25 /* SniprSwarmCore */; };
 		88E6557F264EF15A000EDEAD /* SniprList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6557E264EF15A000EDEAD /* SniprList.swift */; };
 		88E65581264EF2B5000EDEAD /* SniprRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E65580264EF2B5000EDEAD /* SniprRow.swift */; };
-		88E65584264EF417000EDEAD /* ImageRetreiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E65583264EF417000EDEAD /* ImageRetreiver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880E1B572658F668008AB120 /* SniprDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprDetail.swift; sourceTree = "<group>"; };
+		880E1B5A2658F835008AB120 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		880E1B5C2658FCCC008AB120 /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
 		88AFF5FA263D6D03006EAF46 /* SniprSwarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SniprSwarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AFF5FD263D6D03006EAF46 /* SniprSwarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmApp.swift; sourceTree = "<group>"; };
 		88AFF5FF263D6D03006EAF46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,9 +46,9 @@
 		88AFF610263D6D04006EAF46 /* SniprSwarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprSwarmTests.swift; sourceTree = "<group>"; };
 		88AFF612263D6D04006EAF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88AFF629263D6D2D006EAF46 /* SniprSwarmCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SniprSwarmCore; sourceTree = "<group>"; };
+		88DD949326555DB700D21B25 /* AsyncResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncResource.swift; sourceTree = "<group>"; };
 		88E6557E264EF15A000EDEAD /* SniprList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprList.swift; sourceTree = "<group>"; };
 		88E65580264EF2B5000EDEAD /* SniprRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniprRow.swift; sourceTree = "<group>"; };
-		88E65583264EF417000EDEAD /* ImageRetreiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetreiver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DD949626564CB800D21B25 /* SniprSwarmCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880E1B592658F81D008AB120 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				880E1B5A2658F835008AB120 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		88AFF5F1263D6D03006EAF46 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +104,7 @@
 				88AFF5FD263D6D03006EAF46 /* SniprSwarmApp.swift */,
 				88AFF5FF263D6D03006EAF46 /* ContentView.swift */,
 				88E6557D264EF10F000EDEAD /* Views */,
-				88E65582264EF3FF000EDEAD /* Util */,
+				880E1B592658F81D008AB120 /* Model */,
 				88AFF601263D6D04006EAF46 /* Assets.xcassets */,
 				88AFF606263D6D04006EAF46 /* Info.plist */,
 				88AFF607263D6D04006EAF46 /* SniprSwarm.entitlements */,
@@ -100,6 +116,7 @@
 		88AFF603263D6D04006EAF46 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				880E1B5C2658FCCC008AB120 /* Examples.swift */,
 				88AFF604263D6D04006EAF46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -117,18 +134,12 @@
 		88E6557D264EF10F000EDEAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				88DD949326555DB700D21B25 /* AsyncResource.swift */,
 				88E6557E264EF15A000EDEAD /* SniprList.swift */,
 				88E65580264EF2B5000EDEAD /* SniprRow.swift */,
+				880E1B572658F668008AB120 /* SniprDetail.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		88E65582264EF3FF000EDEAD /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				88E65583264EF417000EDEAD /* ImageRetreiver.swift */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		88EBD7B3263D742800FE5899 /* Frameworks */ = {
@@ -155,6 +166,7 @@
 			);
 			name = SniprSwarm;
 			packageProductDependencies = (
+				88DD949526564CB800D21B25 /* SniprSwarmCore */,
 			);
 			productName = SniprSwarm;
 			productReference = 88AFF5FA263D6D03006EAF46 /* SniprSwarm.app */;
@@ -241,11 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880E1B5D2658FCCC008AB120 /* Examples.swift in Sources */,
 				88AFF600263D6D03006EAF46 /* ContentView.swift in Sources */,
 				88E65581264EF2B5000EDEAD /* SniprRow.swift in Sources */,
 				88E6557F264EF15A000EDEAD /* SniprList.swift in Sources */,
+				880E1B582658F668008AB120 /* SniprDetail.swift in Sources */,
 				88AFF5FE263D6D03006EAF46 /* SniprSwarmApp.swift in Sources */,
-				88E65584264EF417000EDEAD /* ImageRetreiver.swift in Sources */,
+				880E1B5B2658F835008AB120 /* ModelData.swift in Sources */,
+				88DD949426555DB700D21B25 /* AsyncResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +521,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88DD949526564CB800D21B25 /* SniprSwarmCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SniprSwarmCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88AFF5F2263D6D03006EAF46 /* Project object */;
 }

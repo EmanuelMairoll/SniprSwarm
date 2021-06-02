@@ -6,15 +6,62 @@
 //
 
 import SwiftUI
+import SniprSwarmCore
 
 struct SniprList: View {
+    let sniprService = SniprService()
+
+    @EnvironmentObject var modelData: ModelData
+    @State private var selected: Snipr?
+
+    var pendingSniprs:[Snipr] {
+        modelData.sniprs.filter { $0.assassination > Date() }
+    }
+
+    var pastSniprs:[Snipr] {
+        modelData.sniprs.filter { $0.assassination <= Date() }
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(selection: $selected) {
+                Section(header: Text("Pending Sniprs")) {
+                    ForEach(pendingSniprs, id: \.hashValue) { snipr in
+                        NavigationLink(destination: SniprDetail(snipr: snipr)) {
+                            SniprRow(snipr: snipr)
+                        }
+                        .tag(snipr)
+                    }
+                }
+                Section(header: Text("Past Sniprs")) {
+                    ForEach(pastSniprs, id: \.hashValue) { snipr in
+                        NavigationLink(destination: SniprDetail(snipr: snipr)) {
+                            SniprRow(snipr: snipr)
+                        }
+                        .tag(snipr)
+                    }
+                }
+
+            }
+            .frame(minWidth: 300)
+            .toolbar {
+                ToolbarItem {
+                    Button(action: {
+                        print("blub")
+                    }, label: {
+                        Label("Add", systemImage: "bag.badge.plus")
+                    })
+                }
+            }
+
+            Text("Select a Snipr")
+        }
     }
 }
 
 struct MainList_Previews: PreviewProvider {
     static var previews: some View {
         SniprList()
+            .environmentObject(ModelData())
     }
 }
