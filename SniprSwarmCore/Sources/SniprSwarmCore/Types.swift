@@ -22,8 +22,8 @@ public struct Snipr: Hashable {
         self.name = name
         self.desc = desc
         self.assassination = assassination
-        self.baseOffetSeconds = baseOffetSeconds
-        self.respectiveOffetSeconds = respectiveOffetSeconds
+        self.baseOffsetSeconds = baseOffetSeconds
+        self.respectiveOffsetSeconds = respectiveOffetSeconds
         self.link = link
         self.size = size
         self.thumbnailUrl = thumbnailUrl
@@ -35,8 +35,8 @@ public struct Snipr: Hashable {
     public var desc: String
     
     public var assassination: Date
-    public var baseOffetSeconds: Int
-    public var respectiveOffetSeconds: Int
+    public var baseOffsetSeconds: Int
+    public var respectiveOffsetSeconds: Int
 
     public var link: String
     public var size: String

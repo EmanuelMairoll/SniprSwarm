@@ -18,7 +18,7 @@ public struct Examples {
         assassination: Date(),
         baseOffetSeconds: 10,
         respectiveOffetSeconds: 5,
-        link: "http://test",
+        link: "https://www.nike.com/at/launch/t/air-vapormax-pure-platinum",
         size: "EU45",
         thumbnailUrl: "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/431dad98-032f-431e-bfb9-8f5f6d402f2a/air-max-pre-day-pure-platinum-release-date.jpg",
         sniprTacticArn: "arn:aws:lambda:eu-central-1:238438322436:function:TestLambda",

@@ -44,7 +44,7 @@ public extension Snipr {
                     id: "\(rule.name!)-\(loopCount + 1)",
                     input: TargetInput(
                         identity: identity,
-                        offsetSeconds: baseOffetSeconds + (respectiveOffetSeconds * loopCount),
+                        offsetSeconds: baseOffsetSeconds + (respectiveOffsetSeconds * loopCount),
                         link: link,
                         size: size
                     ).toJson()
@@ -55,8 +55,8 @@ public extension Snipr {
         }
 
         let tags = [
-            EB.Tag(key: RuleToSniprTags.baseOffetSeconds.rawValue, value: String(baseOffetSeconds)),
-            EB.Tag(key: RuleToSniprTags.respectiveOffetSeconds.rawValue, value: String(respectiveOffetSeconds)),
+            EB.Tag(key: RuleToSniprTags.baseOffetSeconds.rawValue, value: String(baseOffsetSeconds)),
+            EB.Tag(key: RuleToSniprTags.respectiveOffetSeconds.rawValue, value: String(respectiveOffsetSeconds)),
             EB.Tag(key: RuleToSniprTags.link.rawValue, value: link),
             EB.Tag(key: RuleToSniprTags.size.rawValue, value: size),
             EB.Tag(key: RuleToSniprTags.thumbnailUrl.rawValue, value: thumbnailUrl),
